@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" img="image/png" href="images/icon2.png" seize="72x72">
+    <title>Kalendář TMGA</title>
+    <style media="screen">
+    
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            margin: 0;
+            background-color: #FEFDFD; 
+            display: flex;
+            align-items: stretch;   
+        }    
+
+        .font {
+             font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .default-cursor {
+            cursor: default;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .button {
+            border-radius: 500px;
+            outline: none;
+            margin: 0 auto;
+            background-color: transparent;
+        }
+
+        .color {
+            color: #FEFDFD;
+            background-color: #1B19CB;
+        }
+
+        .border-color {
+            border-color: #1B19CB;
+        }
+
+        .off-color {
+            color: #7C7EFB
+
+        }
+
+        #current-day-info {
+            width: 38%;
+            min-height: 100vh;
+        }
+        
+        #current-day-info #app-name-landscape {
+            font-size: 6.2vh;
+            padding: 9vh 0 1vh;
+            border-bottom: 1px solid;
+        }
+
+        #current-day-info h2 {
+            font-size: 6vh;
+            font-weight: 300;
+            margin: 0 0 3vh;
+            padding-top: 3vh;
+        }
+
+        #current-day-info h1 {
+            font-size: 6.8vh;
+            font-weight: 600;
+            margin: 4vh 0;
+        }
+
+        #current-day-info #theme-landscape {
+            display: block;
+            padding: 1.8vh 4.2vh; 
+            color: #FEFDFD;
+            border: 3px solid #FEFDFD;
+            font-size: 2.4vh;
+        }
+
+        #current-day-info #theme-landscape:hover {
+            background-color: white;
+            opacity: 0.4;
+            color: black;   
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div id="current-day-info" class="color">
+
+        <h1 id="app-name-landscape" class="off-color center default-cursor">My Calendar</h1>
+
+        <div>
+            <h2 id="cur-year" class="current-day-heading center default-cursor">2020</h2>
+        </div>
+
+        <div class="">
+            <h1 id="cur-day" class="current-day-heading center default-cursor">Monday</h1>
+            <h1 id="cur-month" class="current-day-heading center default-cursor">June</h1>
+            <h1 id="cur-day" class="current-day-heading center default-cursor">7</h1>
+        </div>
+
+        <button id="theme-landscape" class="font button">Change Theme</button>
+    </div>
+
+    <div id="calendar">
+        
+        <h1 id="arp-name-portrait" class="center off-color">My Calendar</h1>
+
+        <table>
+            <thead class="color">
+                <tr>
+                    <th colspan="7" class="border-color">
+                        <h4 id="cal-year">2018</h4>
+                        <div>
+                            <h3 id="cal-month">July</h3>
+                        </div>
+                    </th>
+                </tr>
+
+
+              <tr>
+                  <th class="weekday border-color">Sun</th>
+                  <th class="weekday border-color">Mon</th>
+                  <th class="weekday border-color">Tue</th>
+                  <th class="weekday border-color">Wed</th>
+                  <th class="weekday border-color">Thu</th>
+                  <th class="weekday border-color">Fri</th>
+                  <th class="weekday border-color">Sat</th>
+              </tr>
+
+            </thead>
+
+            <tbody id="table-body" class="border-color">
+
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+
+            </tbody>
+           
+        </table>
+
+        <button id="theme-portrain" class="font button color">Change Theme</button>
+
+    </div>
+
+
+    
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
