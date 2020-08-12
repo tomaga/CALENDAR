@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
     <link rel="icon" img="image/png" href="images/icon2.png" seize="72x72">
     <title>Kalendář TMGA</title>
     <style media="screen">
@@ -15,6 +15,16 @@
             display: flex;
             align-items: stretch;   
         }    
+
+        table, td, th {
+            border: 1px solid #232323;
+        }
+
+        table {
+            margin: 14px auto;
+            padding: 7vh 0;
+            border-collapse: collapse;
+        }
 
         .font {
              font-family: 'Josefin Sans', sans-serif;
@@ -87,7 +97,50 @@
             color: black;   
         }
 
+        #calendar {
+            width: 62%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: space-around;
+        }
 
+        #calendar #app-name-portrait {
+            display: none;
+        }
+
+        #calendar #theme-portrait {
+            display: none;
+        }
+
+        #calendar thead tr:first-child th div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #calendar  h4 {
+            margin: 0;
+            padding: 0.8vw 0 0.2vw;
+            font-size: 1.4vw;
+            font-weight: 300;
+        }
+
+        #calendar h3 {
+            font-size: 2vw;
+            font-weight: 700;
+            margin: 0;
+            padding: 0 2vw;
+            display: inline-block;
+        }
+
+        #calendar .weekday {
+            font-size: 1.7vw;
+            font-weight: 300;
+            padding: 8px 0 5px;           
+            border-bottom: 1px solid white !important;
+        }
 
     </style>
 </head>
@@ -141,7 +194,7 @@
             <tbody id="table-body" class="border-color">
 
                 <tr>
-                    <td>1</td>
+                    <td>23</td>
                     <td>1</td>
                     <td>1</td>
                     <td>1</td>
