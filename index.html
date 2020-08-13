@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="icon" img="image/png" href="images/icon2.png" seize="72x72">
     <title>Kalendář TMGA</title>
     <style media="screen">
@@ -56,7 +57,30 @@
 
         .off-color {
             color: #7C7EFB
+        }
 
+        .tooltip span {
+            display: none;
+        }
+
+        .tooltip:hover {
+            cursor: help;
+            position: relative;
+        }
+
+        .tooltip:hover span {
+            display: block;
+            font-size: 1vw;
+            padding: 6px;
+            white-space: pre-wrap;
+            width: 12vw;
+            z-index: 100;
+            background-color: #EDEDED;
+            color: black;
+            border-radius: 6px;
+            left: 2vw;
+            top: 4vw;
+            position: absolute;
         }
 
         #current-day-info {
@@ -142,6 +166,42 @@
             border-bottom: 1px solid white !important;
         }
 
+        #calendar .icon {
+            font-size: 1.2vw;
+        }
+
+        #calendar .icon:hover {
+            opacity: 0.6;
+        }
+
+        #calendar tbody td {
+            height: 5.2vw;
+            width: 5.2vw;
+            font-size: 0.8vw;
+            font-weight: 600;
+            vertical-align: top;
+            padding: 0.5vw;
+            transition: font-size .4s ease;
+        }
+
+        #calendar tbody td:hover {
+            font-size: 1.2vw;
+        }
+
+        #calendar #current-day {
+            background-color: #E1E1E1;
+        }
+
+        #calendar img {
+            width: 3.8vw;
+            vertical-align: top;
+            position: relative;
+            top: 0.5vw;
+            left: 12px;
+
+        }
+
+
     </style>
 </head>
 <body>
@@ -173,7 +233,12 @@
                     <th colspan="7" class="border-color">
                         <h4 id="cal-year">2018</h4>
                         <div>
+
+                            <i class="fas fa-caret-left icon"></i>
                             <h3 id="cal-month">July</h3>
+                            <i class="fas fa-caret-right icon"></i>
+
+
                         </div>
                     </th>
                 </tr>
@@ -215,7 +280,7 @@
                     <td>1</td>
                     <td>1</td>
                     <td>1</td>
-                    <td>1</td>
+                    <td class="tooltip">1<img src="images/note1.png"><span>This is a pretty good note.</span></td>
                     <td>1</td>
                     <td>1</td>
                     <td>1</td>
