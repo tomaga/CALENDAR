@@ -21,8 +21,112 @@
         @media (orientation: portrait) {
             body {
                 flex-direction: column;
+            }
+
+            #current-day-info {
+                width: 100%;
+                min-height: initial;
+                height: 12vh;
+                padding: 1vh 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            #current-day-info h2 {
+                font-size: 3vh;
+            }   
+
+            #curren-day-info h1 {
+                font-size: 4.6vh;
+            }
+
+            #current-day-info #app-name-landscape{
+                display: none;
+            }
+
+            #current-day-info #theme-landscape {
+                display: none;
+            }
+
+            #current-day-info .current-day-heading {
+                display: inline;
+                padding: 0;
+                margin: 0 4px;
+                font-size: 7vw;
+            }
+
+            #calendar {
+                width: 100%;
+                display: block;
+                margin-top: 3.6vh;
 
             }
+
+            #caleder #app-name-portrait {
+                display: block;
+                margin: 0;
+                font-size: 3.5vh;
+            }
+
+            #calender h4 {
+                padding: 1.2vw 0 0.2vw;
+            }
+
+            #calender h3 {
+                font-size: 3.8vw;
+                padding: 1.4 2vw 0 0.8vw;
+            }
+
+            #calendar .weekday {
+                font-size: 2.5vw;
+            }
+
+            #calendar tbody td {
+                height: 9.8vw;
+                width: 9.8vw;
+                font-size: 1.6vw;
+                padding: 0.8vw;
+            }
+
+            #calender img {
+                width: 7.4vw;
+                top: 0.7vw
+            }
+
+            #calendar #theme-portrait {
+                display: block;
+                padding: 3vw 26.5vw;
+                margin-top: 2vh;
+                border: none; 
+
+            }
+
+            .popup {
+                width: 75vw;
+            }
+
+            #fav-color #color-options .color-options {
+                width: 12vw;
+            }
+
+            #fav-color #update-theme {
+                padding: 6px 16px;
+                border-width: 2px;
+            }
+
+            #fav-color #color-options .checkmark {
+                font-size: 1.2vh;
+            }
+
+            #make-note #edit-post-it {
+                width: 62vw;
+                height: 24vh;
+                font-size: 4vh;
+            }
+
+
         }
 
 
@@ -102,14 +206,16 @@
                 top: 4vw;
                 position: absolute;
             }
+
+                
+            #current-day-info {
+                width: 38%;
+                min-height: 100vh;
+            }
         }
 
        
 
-        #current-day-info {
-            width: 38%;
-            min-height: 100vh;
-        }
         
         #current-day-info #app-name-landscape {
             font-size: 6.2vh;
@@ -222,7 +328,7 @@
             top: 0.5vw;
             left: 12px;
 
-        }
+    }
 
 
     </style>
